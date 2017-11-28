@@ -1,0 +1,341 @@
+/*
+Theme Name: SimpAir Blog Theme
+Author: Radosz Szymon
+Author URI: https://radoszszymon.github.io
+Description: Minimalistic wp blog theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: minimal, blog-theme
+The simplest things are often the truest
+*/
+
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #212121;
+}
+body,html,.jumbotron{
+    padding:0;
+    margin:0;
+    width: 100%;
+}
+.container{
+    margin:0;
+    width:100%;
+    padding:0 10%;
+    background-color: #fff;
+}
+.jumbotron{
+    background-color: #fff;
+}
+.col-sm-6, .col-sm-4, .col-sm-8, .col-sm-12,.col-sm-11, .col-sm-1{
+    padding:0;
+}
+.row{
+    margin:0;
+    padding:0;
+}
+.menu{
+    margin: 3em 0 0 0;
+}
+.menu .hfeed .site{
+    display:none;
+}
+.logo{
+    width:32px;
+}
+.menu{
+    width:100%;
+}
+.navbar-right li{
+    font-size:20px;
+    display:inline-block;
+}
+.navbar-right{
+    text-align:right;
+}
+.navbar-right a{
+    color: #212121;
+    text-decoration: none;
+    padding:0 1em;
+}
+.navbar-right a:hover, .viewMore:hover {
+    color: #636363;
+}
+ul{
+    list-style-type: none;
+}
+.quote h2{
+    text-align: center;
+    font-weight: 300;
+    font-size: 3.2em;
+    margin: 4em 0 5em 0;
+}
+.postsList{
+    max-width:100%;
+    margin:0;
+}
+.postsList a{
+    text-decoration: none;
+    color:#fff;
+}
+.postDate{
+    font-size:2.3em;
+    font-weight: 300;
+    display:none;
+    padding-bottom: .2em;
+}
+.post .postTitle{
+    font-size:4em;
+    font-weight:600;
+}
+
+.viewMore{
+    color: #212121;
+    text-decoration: underline;
+}
+.footer{
+    background-color: #f6f6f6;
+    margin:4em 0 0 0;
+    width: 100%;
+}
+.footer h6{
+    font-size:1em;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* ============== single post ============== */
+.samplePost{
+    margin:0;
+    padding-top:1em;
+}
+.singleImage{
+    width:50%;
+    height:50%;
+    float:left;
+    margin:0 3em 2em 0;
+}
+singlePostContent{
+    margin-top: 1em;
+}
+.postContent p{
+    
+}
+.singleTitle{
+    font-weight: 800;
+    font-size: 2em;
+}
+.singleDate{
+    font-size:1.5em;
+    font-weight: 300;
+    padding: .4em 0 1em 0;
+}
+.attachment-singleImage{
+    float: left;
+    width: 50%;
+    height:100%;
+    margin: 0 3.5em 2em 0;
+}
+.singlePostContent{
+    font-size: 1.5em;
+    text-align: justify;
+}
+.readAlsoImage{
+    position: relative;
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.readAlsoImage:before{
+    content: "";
+	display: block;
+	padding-top: 100%; 
+}
+.readAlso{
+    margin-top: 4em;
+    clear:both;
+}
+.postText{
+    position: absolute;
+    top:0;
+    padding:3em;
+}
+.random:hover .postTitle, .random:hover .postDate{
+    display: block;
+    -webkit-animation: fadeInFromNone 1s ease-out;
+    -moz-animation: fadeInFromNone 1s ease-out;
+    -o-animation: fadeInFromNone 1s ease-out;
+    animation: fadeInFromNone 1s ease-out;
+}
+.random:hover{
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) );
+}
+.readAlso h2, .commentsList h2{
+    font-weight: 800;
+    padding:.6em 0;
+    font-size: 3em;
+}
+.random .postTitle{
+    margin:0;
+    color:#fff;
+    display:none;
+}
+.random .postTitle:hover{
+    color: #f7f7f7;
+}
+.random a:hover{
+    text-decoration: none;
+}
+.randompost0{
+    margin:0 1% 1% 0;
+}
+.randompost2{
+    margin:1% 1% 0 0;
+}
+.randompost1{
+    margin:0 0 1% 1%;
+}
+.randompost3{
+    margin:1% 0 0 1%;
+}
+.commentsList{
+    margin-top: 4em;
+}
+.singleComment h2{
+    font-size: 1.5em;
+}
+.singleComment p {
+    padding-left: 4em;
+    font-size: 1.3em;
+    padding-bottom: 1em;
+}
+.bucketlistSectionTitle{
+    font-weight:800;
+    padding:2em 0;
+}
+.bucketlistSectionContent{
+    padding-left:4em;
+}
+.firstBucket{
+    padding-top:0;
+    margin-top: 0;
+}
+.wc-form-wrapper .wc-main-form-wrapper{
+    background-color: #fff !important;
+}
+.wc-form-wrapper{
+    border:none !important;
+}
+.wpdiscuz-subscribe-bar,.avatar,.wpd-field-icon{
+    display:none !important;
+}
+/*menu */
+.navbar-default{
+    background-color: #fff;
+    border-color: #fff;
+    margin-top:50px;
+    margin-bottom: 0;
+}
+.container-fluid{
+    padding:0;
+}
+/*image hover */
+/*.postTitle, .postDate{display:none;}
+
+.randompost0:hover .postTitle, .randompost0:hover .postDate{display:block !important;}*/
+
+/*comment form*/
+div#wpcomm{max-width:unset !important;margin:0 !important;}
+
+div#wc-main-form-wrapper-0_0{background:#fff !important;}
+
+div#wc_show_hide_loggedin_username{max-width:unset !important;}
+
+.wc-form-footer, #wpcomm .wc-comment .wc-comment-right, #wpcomm .wc-field-textarea{margin-left:0 !important;}
+
+#wpcomm .wc-form-wrapper{padding:10px 0 0 0 !important;}
+
+#wpcomm .wpd-form-row .wpd-has-icon .wpd-field{
+    padding-left:10px !important;
+}
+
+#wpcomm .wc-comment-author a {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #212121;
+}
+
+.wc-comment-text, .wc-comment-author{padding-left: 0 !important;}
+
+p.wc_held_for_moderate{display:none !important;}
+
+.wc-comment-text{padding-left:35px !important;}
+
+.wc-comment-link{display: none !important;}
+
+.noSearch.quote{margin-bottom: 40em;}
+
+/*remove search under footer */
+#full-screen-search {
+display:none !important;
+}
+#full-screen-search.open {
+display:block !important;
+}
+
+/*search input styles */
+input#full-screen-search-input{
+    color:#303030 !important;
+    font-size: 80px !important;
+    background-color: unset !important;
+}
+::-webkit-input-placeholder, ::-moz-placeholder, ::-ms-input-placeholder { 
+  color: #303030 !important;
+} 
+.astm-search-menu form .screen-reader-text{
+    display: inline-block !important;
+    color:#fff !important;
+    content: "" !important;
+    height:20px !important;
+}
+.astm-search-menu form .screen-reader-text:before{
+    font-family: FontAwesome !important;
+    display:inline-block !important;
+    content: "\f002" !important;
+    color:#303030 !important;
+    cursor:pointer;
+    padding: 0 1em;
+}
+input#s, input#searchsubmit{
+    display:none !important;
+}
+
+/* < 480 px */
+@media all and (max-width:480px) {
+    .random{
+        width:100%;
+    }
+    .readAlsoImage{
+        padding: 10% 0 30% 10%;
+    }
+    .randompost0,.randompost1,.randompost2,.randompost3{
+        margin:0 0 5% 0;
+    }
+}
+/*481 - 768*/
+@media all and (min-width:481px) and (max-width:768px) {
+    .random{
+        width:100%;
+    }
+    .readAlsoImage{
+        padding: 10% 0 60% 10%;
+    }
+    .randompost0,.randompost1,.randompost2,.randompost3{
+        margin:0 0 5% 0;
+    }
+    
+}
